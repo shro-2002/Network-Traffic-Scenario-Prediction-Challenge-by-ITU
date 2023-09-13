@@ -13,7 +13,7 @@ This repository contains the solution for the Traffic Scenario Classification Ch
 
 ## Solution Approach
 
-The solution notebook for this challenge utilizes logistic regression for traffic scenario classification. Logistic regression is a suitable choice for binary classification tasks, which fits well with the nature of predicting scenarios. The challenge requires predicting the scenario to which unknown traffic belongs. The accuracy achieved by the solution is an impressive 99%.
+The solution notebook for this challenge utilizes XGBoost for traffic scenario classification. XGBoost is a suitable choice for multi classification tasks, which fits well with the nature of predicting scenarios. The challenge requires predicting the scenario to which unknown traffic belongs. The accuracy achieved by the solution is an impressive 30%.
 
 ## Data Visualization
 
@@ -45,4 +45,4 @@ Zindi is a platform that hosts various AI and machine learning challenges. This 
 
 ## Contact Information
 
-For more details about the solution, please contact the author at [your.email@example.com](mailto:your.email@example.com).
+For more details about the solution, please contact the author at [ghoshshro2002@gmail.com](mailto:ghoshshro2002@gmail.com).
