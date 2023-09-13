@@ -7,9 +7,9 @@ This repository contains the solution for the Traffic Scenario Classification Ch
 ## Challenge Details
 
 - **Organizer:** Zindi
-- **Competition Accuracy:** 99%
+- **Competition Accuracy:** 30%
 - **Competition URL:** [Zindi Competition Link]([https://www.zindi.org/competitions/](https://zindi.africa/competitions/network-traffic-scenario-prediction-challenge))
-- **Model Used:** Logistic Regression
+- **Model Used:** XGBoost Classifier
 
 ## Solution Approach
 
@@ -28,7 +28,7 @@ The solution notebook includes several data visualizations to better understand 
 
 ## Evaluation
 
-The competition's primary evaluation metric is Accuracy. The solution's accuracy of 99% showcases its effectiveness in predicting traffic scenarios accurately. Both the quality of the technical report and the achieved model score will be considered during the final evaluation.
+The competition's primary evaluation metric is Accuracy. The solution's accuracy of 30% showcases its effectiveness in predicting traffic scenarios accurately. Both the quality of the technical report and the achieved model score will be considered during the final evaluation.
 
 ## Prizes
 
