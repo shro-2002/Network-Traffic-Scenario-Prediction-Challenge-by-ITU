@@ -7,13 +7,12 @@ This repository contains the solution for the Traffic Scenario Classification Ch
 ## Challenge Details
 
 - **Organizer:** Zindi
-- **Competition Accuracy:** 30%
 - **Competition URL:** [Zindi Competition Link]([https://www.zindi.org/competitions/](https://zindi.africa/competitions/network-traffic-scenario-prediction-challenge))
 - **Model Used:** XGBoost Classifier
 
 ## Solution Approach
 
-The solution notebook for this challenge utilizes XGBoost for traffic scenario classification. XGBoost is a suitable choice for multi classification tasks, which fits well with the nature of predicting scenarios. The challenge requires predicting the scenario to which unknown traffic belongs. The accuracy achieved by the solution is an impressive 30%.
+The solution notebook for this challenge utilizes XGBoost for traffic scenario classification. XGBoost is a suitable choice for multi classification tasks, which fits well with the nature of predicting scenarios. The challenge requires predicting the scenario to which unknown traffic belongs. See Results below for the measured accuracy.
 
 ## Data Visualization
 
@@ -21,23 +20,21 @@ The solution notebook includes several data visualizations to better understand 
 
 ## Repository Contents
 
-- `solution_notebook.ipynb`: Jupyter Notebook containing the complete solution.
-- `data_visualizations.ipynb`: Jupyter Notebook containing data visualizations.
-- `submission.csv`: CSV file containing model predictions for the test dataset.
-- `report.pdf`: Technical report explaining the solution methodology, outcomes, and model details.
+- `model-solution.ipynb`: data loading (78 training files), scaling, PCA and an XGBoost classifier; writes the submission.
+- `solution.ipynb`: exploratory analysis and visualisations.
+- `submissionfile.csv`: predictions submitted to Zindi.
+- `SampleSubmission.csv`, `variableDefinition.txt`: provided by the challenge.
 
-## Evaluation
+The training and test CSVs are not included; download them from the Zindi challenge page.
 
-The competition's primary evaluation metric is Accuracy. The solution's accuracy of 30% showcases its effectiveness in predicting traffic scenarios accurately. Both the quality of the technical report and the achieved model score will be considered during the final evaluation.
+## Results
 
-## Prizes
+| Split | Metric | Score | Source |
+| --- | --- | --- | --- |
+| Random 80/20 split of training rows | Accuracy | 0.304 | `model-solution.ipynb`, cell 17 |
+| Zindi leaderboard | Accuracy | `<add public/private score if known>` | Zindi |
 
-The competition offers attractive prizes for top performers:
-- 1st Place: $500 USD
-- 2nd Place: $300 USD
-- 3rd Place: $200 USD
-
-Additionally, there are 3,000 Zindi points available for participants.
+**Limitations.** 30% accuracy is a weak result, and I have not compared it with a majority-class baseline. The hold-out split is random over rows, so rows from the same traffic file appear in both train and test; a split by file would better match the challenge's test set, which uses unseen files. PCA was chosen without comparing against the raw features.
 
 ## About Zindi and AI for Good - ITU
 
